@@ -1,0 +1,17 @@
+{
+  "name": "qa-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:demo": "npx http-server demo-app -p 5173",
+    "test:api": "jest tests/api",
+    "test:e2e": "npx playwright test",
+    "test": "npm run test:api && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "http-server": "^14.1.1",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
